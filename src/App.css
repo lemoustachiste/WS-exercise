@@ -1,0 +1,12 @@
+.main {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.main__panel {
+  height: 100%;
+  width: 50%;
+  border: 1px;
+}
