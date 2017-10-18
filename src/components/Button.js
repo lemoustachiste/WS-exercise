@@ -1,17 +1,17 @@
 import React from 'react'
 import PropTypes from 'proptypes'
 
-const Button = ({ direction, onClickHandler }) => {
+const Button = ({ children, clickHandler }) => {
 	return (
-		<button onClick={onClickHandler} >
-			{ direction }
+		<button onClick={clickHandler} >
+			{ children }
 		</button>
 	)
 }
 
 Button.proptypes = {
-	direction: PropTypes.string,
-	onClickHandler: PropTypes.func
+	children: PropTypes.any,
+	clickHandler: PropTypes.func
 }
 
 export default Button

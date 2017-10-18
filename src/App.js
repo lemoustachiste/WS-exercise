@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Counter from './components/Counter'
-import AddToAll from './components/AddToAll'
+import Button from './components/Button'
 import './App.css'
 
 class App extends Component {
@@ -36,7 +36,9 @@ class App extends Component {
         <Counter addOne={this.state.addOne}/>
         <Counter addOne={this.state.addOne}/>
         <Counter addOne={this.state.addOne}/>
-        <AddToAll clickHandler={this.addOneToAll} />
+        <Button clickHandler={this.addOneToAll}>
+          Add +1 to all
+        </Button>
       </div>
     )
   }

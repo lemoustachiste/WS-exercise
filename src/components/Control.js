@@ -11,8 +11,8 @@ const Control = ({ className, onAddOne, onSubstractOne }) => {
 
 	return (
 		<div className='control'>
-			<Button direction='up' onClickHandler={onAddOne} />
-			<Button direction='down' onClickHandler={onSubstractOne} />
+			<Button clickHandler={onAddOne}>Up</Button>
+			<Button clickHandler={onSubstractOne}>Down</Button>
 		</div>
 	)
 }
