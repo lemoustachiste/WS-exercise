@@ -14,23 +14,13 @@ class App extends Component {
     }
   }
 
-  updateAddOneProp (update) {
-    this.setState({
-      addOne: update
+  addOneToAll () {
+     this.setState({
+      addOne: true
     })
   }
 
-  addOneToAll () {
-    this.updateAddOneProp(true)
-    setTimeout(this.resetAddOneProp, 0)
-  }
-
-  resetAddOneProp () {
-    this.updateAddOneProp(false)
-  }
-
   render () {
-
     return (
       <div className='main'>
         <Counter addOne={this.state.addOne}/>

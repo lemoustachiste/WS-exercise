@@ -10,7 +10,7 @@ const Control = ({ className, onAddOne, onSubstractOne }) => {
 	)
 
 	return (
-		<div className='control'>
+		<div className={classes}>
 			<Button clickHandler={onAddOne}>Up</Button>
 			<Button clickHandler={onSubstractOne}>Down</Button>
 		</div>
